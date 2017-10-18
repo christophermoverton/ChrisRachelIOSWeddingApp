@@ -1,24 +1,754 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="destain.ttf">
+            <string>destain</string>
+        </array>
+        <array key="ter1.ttf">
+            <string>TerryScript</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChrisRachelWeddingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="evG-jy-gkG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChrisRachelWeddingInvitation2" translatesAutoresizingMaskIntoConstraints="NO" id="YT5-Sm-h1p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E1t-yR-uaO">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8P-g8-Lpb">
+                                        <rect key="frame" x="15" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="homeicon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1X-nH-id7">
+                                        <rect key="frame" x="85" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ceremonyicon"/>
+                                        <connections>
+                                            <segue destination="vcc-1L-BYX" kind="presentation" identifier="cSend" modalTransitionStyle="crossDissolve" id="My2-6S-5cp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKg-EF-cH7">
+                                        <rect key="frame" x="155" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="celebrationicon"/>
+                                        <connections>
+                                            <segue destination="gJm-SB-j0h" kind="presentation" identifier="celSend" modalTransitionStyle="crossDissolve" id="bU3-ha-GSt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqI-6Y-lT6">
+                                        <rect key="frame" x="225" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="guestbookicon"/>
+                                        <connections>
+                                            <segue destination="i3U-76-LM7" kind="presentation" identifier="gShow" modalTransitionStyle="crossDissolve" id="QvU-e9-V2o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g95-mO-dvK">
+                                        <rect key="frame" x="295" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aboutusicon"/>
+                                        <connections>
+                                            <segue destination="NXU-nK-ixh" kind="presentation" identifier="aShow" modalTransitionStyle="crossDissolve" id="j6F-Tx-hmF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0J-GO-RvU">
+                                <rect key="frame" x="59" y="83" width="239" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="We're getting">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Saturday October 28th at Noon" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gY-gG-atk">
+                                <rect key="frame" x="37" y="340" width="300" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="destain" family="destain" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVr-GD-1ge">
+                                <rect key="frame" x="94" y="303" width="58" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Chris">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="22" name="TerryScript"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VQK-06-Scx">
+                                <rect key="frame" x="243" y="303" width="58" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rachel">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="22" name="TerryScript"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GJ-F6-MNW">
+                                <rect key="frame" x="168" y="142" width="160" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="married!">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RachelImage" translatesAutoresizingMaskIntoConstraints="NO" id="hZw-co-5wK">
+                                <rect key="frame" x="229" y="204" width="87" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chris" translatesAutoresizingMaskIntoConstraints="NO" id="W3Z-hP-73C">
+                                <rect key="frame" x="80" y="204" width="87" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMV-fH-Yau">
+                                <rect key="frame" x="184" y="222" width="73" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="+">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="mrE-zF-D7B"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="l8P-g8-Lpb" id="Xk7-xI-vaf"/>
+                        <outlet property="button2" destination="U1X-nH-id7" id="4gH-kM-QST"/>
+                        <outlet property="button3" destination="SKg-EF-cH7" id="gVR-fr-P6s"/>
+                        <outlet property="button4" destination="JqI-6Y-lT6" id="dX8-7u-n1x"/>
+                        <outlet property="button5" destination="g95-mO-dvK" id="1Bv-Kr-9B9"/>
+                        <outlet property="text1" destination="Z0J-GO-RvU" id="xOU-HW-WT3"/>
+                        <outlet property="text2" destination="7GJ-F6-MNW" id="Qrz-T8-71U"/>
+                        <outlet property="text3" destination="2gY-gG-atk" id="CvC-6O-kPt"/>
+                        <outlet property="text4" destination="FVr-GD-1ge" id="ygI-N4-pY2"/>
+                        <outlet property="text5" destination="VQK-06-Scx" id="q0o-G4-LZG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="33.733133433283363"/>
+        </scene>
+        <!--Celebration View Controller-->
+        <scene sceneID="Qtg-yn-AFp">
+            <objects>
+                <viewController id="gJm-SB-j0h" customClass="CelebrationViewController" customModule="ChrisRachelWeddingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nnv-ab-bXW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChrisRachelWeddingInvitation2" translatesAutoresizingMaskIntoConstraints="NO" id="j55-kf-nND">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YTr-vX-vDG">
+                                <rect key="frame" x="68" y="20" width="239" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Celebration">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gxp-dF-mvz">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRJ-iJ-EBJ">
+                                        <rect key="frame" x="15" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="homeicon"/>
+                                        <connections>
+                                            <action selector="HomeNavigate:" destination="gJm-SB-j0h" eventType="touchUpInside" id="uMC-Aw-uHK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UX-OT-IWs">
+                                        <rect key="frame" x="85" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ceremonyicon"/>
+                                        <connections>
+                                            <action selector="CeremonyNavigation:" destination="gJm-SB-j0h" eventType="touchUpInside" id="WuC-rh-HBN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeJ-io-2vM">
+                                        <rect key="frame" x="155" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="celebrationicon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4l-YD-8WB">
+                                        <rect key="frame" x="225" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="guestbookicon"/>
+                                        <connections>
+                                            <action selector="GuestNavigation:" destination="gJm-SB-j0h" eventType="touchUpInside" id="Rzd-nr-wuS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv7-19-64U">
+                                        <rect key="frame" x="295" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aboutusicon"/>
+                                        <connections>
+                                            <action selector="AboutUsNavigation:" destination="gJm-SB-j0h" eventType="touchUpInside" id="fmW-MU-57D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pv-ts-aJF">
+                                <rect key="frame" x="35" y="106" width="304" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Rye Restaurant  
+10551 Mission Road
+Leawood, Kansas 66206</string>
+                                <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwx-Xh-bCb">
+                                <rect key="frame" x="35" y="207" width="304" height="371"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">http://www.ryekc.com
+
+October 28th between 2-4pm
+
+Reservation name:  Overton
+
+People are welcome to arrive between 1:30 PM to 2:00 PM.  Beverages of all sorts will be available upon arrival.
+
+It is our pleasure to provide this meal in celebration of our marriage. </string>
+                                <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Tlg-Rn-Bm8"/>
+                    </view>
+                    <connections>
+                        <outlet property="Text1" destination="YTr-vX-vDG" id="agF-LZ-VZP"/>
+                        <outlet property="button1" destination="TRJ-iJ-EBJ" id="ibl-yr-VO0"/>
+                        <outlet property="button2" destination="8UX-OT-IWs" id="oAu-hr-2Zf"/>
+                        <outlet property="button3" destination="HeJ-io-2vM" id="fMz-rH-OPJ"/>
+                        <outlet property="button4" destination="M4l-YD-8WB" id="xyd-DF-ilE"/>
+                        <outlet property="button5" destination="sv7-19-64U" id="2de-10-tTz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iK9-KV-4wB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="25"/>
+        </scene>
+        <!--Guest Book View Controller-->
+        <scene sceneID="Bm5-hy-w9e">
+            <objects>
+                <viewController id="i3U-76-LM7" customClass="GuestBookViewController" customModule="ChrisRachelWeddingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KcQ-El-S2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChrisRachelWeddingInvitation2" translatesAutoresizingMaskIntoConstraints="NO" id="uLC-xJ-4ZK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qyY-aM-nSY">
+                                <rect key="frame" x="68" y="20" width="239" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Guest Book">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6G-YO-QQV">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg8-ev-7pH">
+                                        <rect key="frame" x="15" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="homeicon"/>
+                                        <connections>
+                                            <action selector="HomeNavigate:" destination="gJm-SB-j0h" eventType="touchUpInside" id="n88-ia-2A1"/>
+                                            <action selector="HomeNavigation:" destination="i3U-76-LM7" eventType="touchUpInside" id="sye-mF-mlJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FC-KP-ejF">
+                                        <rect key="frame" x="85" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ceremonyicon"/>
+                                        <connections>
+                                            <action selector="CeremonyNavigation:" destination="i3U-76-LM7" eventType="touchUpInside" id="wGS-fs-AY6"/>
+                                            <action selector="CeremonyNavigation:" destination="gJm-SB-j0h" eventType="touchUpInside" id="zMG-Bb-R6Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHM-yM-yfe">
+                                        <rect key="frame" x="155" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="celebrationicon"/>
+                                        <connections>
+                                            <action selector="CelebrationNavigation:" destination="i3U-76-LM7" eventType="touchUpInside" id="TGI-Qg-X5G"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teo-GE-OGW">
+                                        <rect key="frame" x="225" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="guestbookicon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5n-SG-Dep">
+                                        <rect key="frame" x="295" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aboutusicon"/>
+                                        <connections>
+                                            <action selector="AboutUsNavigation:" destination="i3U-76-LM7" eventType="touchUpInside" id="E9Y-UQ-npP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkQ-W6-LTp">
+                                <rect key="frame" x="208" y="484" width="151" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="23"/>
+                                <state key="normal" title="Sign Our Guest Book!"/>
+                                <connections>
+                                    <segue destination="zgA-WC-ZDf" kind="presentation" modalTransitionStyle="crossDissolve" id="scB-Cl-Jaa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="YgO-Qe-90D"/>
+                    </view>
+                    <connections>
+                        <outlet property="GBMainView" destination="KcQ-El-S2Z" id="dZB-tj-3HW"/>
+                        <outlet property="button1" destination="Hg8-ev-7pH" id="qgY-lW-1Yz"/>
+                        <outlet property="button2" destination="8FC-KP-ejF" id="XVx-s1-vh4"/>
+                        <outlet property="button3" destination="dHM-yM-yfe" id="RhF-AE-4As"/>
+                        <outlet property="button4" destination="Teo-GE-OGW" id="r4T-gG-3ef"/>
+                        <outlet property="button5" destination="G5n-SG-Dep" id="tUZ-8Q-VQr"/>
+                        <outlet property="text1" destination="qyY-aM-nSY" id="sCm-pm-zXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="im3-oV-MhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736.8" y="24.7376311844078"/>
+        </scene>
+        <!--Ceremony View Controller-->
+        <scene sceneID="kyh-yf-foU">
+            <objects>
+                <viewController id="vcc-1L-BYX" customClass="CeremonyViewController" customModule="ChrisRachelWeddingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="458-S4-cPH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChrisRachelWeddingInvitation2" translatesAutoresizingMaskIntoConstraints="NO" id="SWc-cs-QOh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-u8-Lvr">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmL-by-2eE">
+                                        <rect key="frame" x="15" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="homeicon"/>
+                                        <connections>
+                                            <action selector="HomeNavigate:" destination="gJm-SB-j0h" eventType="touchUpInside" id="qzt-iz-oDz"/>
+                                            <action selector="HomeNavigation:" destination="vcc-1L-BYX" eventType="touchUpInside" id="OJe-Cz-ss3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pic-nC-1Oi">
+                                        <rect key="frame" x="85" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ceremonyicon"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcK-S8-U0C">
+                                        <rect key="frame" x="155" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="celebrationicon"/>
+                                        <connections>
+                                            <action selector="CelebrationNavigation:" destination="vcc-1L-BYX" eventType="touchUpInside" id="7Hh-zm-tMs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQu-uA-QAF">
+                                        <rect key="frame" x="225" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="guestbookicon"/>
+                                        <connections>
+                                            <action selector="GuestNavigation:" destination="vcc-1L-BYX" eventType="touchUpInside" id="R1J-qy-mLA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmT-R7-Osu">
+                                        <rect key="frame" x="295" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aboutusicon"/>
+                                        <connections>
+                                            <action selector="AboutUsNavigation:" destination="vcc-1L-BYX" eventType="touchUpInside" id="mTy-bP-BND"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wym-yu-ZEe">
+                                <rect key="frame" x="68" y="20" width="239" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ceremony">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-sc-mS9" customClass="FadeScrollView" customModule="ChrisRachelWeddingApp" customModuleProvider="target">
+                                <rect key="frame" x="35" y="94" width="304" height="475"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="cht-Qm-Qkg">
+                                        <rect key="frame" x="32" y="119" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTq-Jd-gtP">
+                                        <rect key="frame" x="0.0" y="277" width="304" height="1200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">From the Arboretum parking lot go to the Monet Garden
+
+Date and Time:October 28th from 11:30 AM to 1 PM
+
+Photo session will proceed wedding ceremony  from 11:30 AM to 12:15 PM
+ and continue through the duration of the wedding ceremony.
+ Any are welcome to take photos.  Just don’t blind us with the flash!  Haha!
+  Photographer:  Moree Scofield, colleague and friend of the bride.  
+Ceremony commences at 12:15 PM promptly concludes by 1 PM.
+
+ Officiant:  Janet K Tinsley,  colleague and friend of the bride
+ 
+ Music performed by:  Andy Adams, brother-in-law of the bride.
+
+ Inclement Weather:
+ This will be an outdoor wedding!  Prepare possibly for cooler or warmer temperatures!
+ (It's Kansas so you never know!)   If inclement weather occurs, the Arboretum visitor's center will serve as the alternative location for the wedding ceremony.
+
+ This is the first building you'll see after passing through the main entrance to the arboretum.
+ 
+ Signs at the site will provide direction to the location of the ceremony and photo shoot area.</string>
+                                        <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nHA-tg-nX9">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Overland Park Arboretum
+8909 W 179th Street
+Overland Park, Kansas 66013</string>
+                                        <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="29"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="umh-Kg-YtL"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="EmL-by-2eE" id="CuQ-cz-fgD"/>
+                        <outlet property="button2" destination="pic-nC-1Oi" id="0aN-x1-cBO"/>
+                        <outlet property="button3" destination="PcK-S8-U0C" id="IwP-Pp-ntL"/>
+                        <outlet property="button4" destination="hQu-uA-QAF" id="pUa-eC-pjr"/>
+                        <outlet property="button5" destination="vmT-R7-Osu" id="OdM-bb-iAy"/>
+                        <outlet property="cscrollview" destination="I3d-sc-mS9" id="iMa-eZ-3UM"/>
+                        <outlet property="text1" destination="wym-yu-ZEe" id="eaQ-Tn-X5K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvB-ID-7ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.60000000000002" y="681.40929535232385"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="8hP-X3-xuc">
+            <objects>
+                <viewController id="NXU-nK-ixh" customClass="AboutUsViewController" customModule="ChrisRachelWeddingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6g-cl-mXd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChrisRachelWeddingInvitation2" translatesAutoresizingMaskIntoConstraints="NO" id="5ZL-KC-s7b">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tyr-WL-3Pa">
+                                <rect key="frame" x="68" y="20" width="239" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="About Us">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bt-os-po0">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEw-wQ-eVg">
+                                        <rect key="frame" x="15" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="homeicon"/>
+                                        <connections>
+                                            <action selector="HomeNavigate:" destination="gJm-SB-j0h" eventType="touchUpInside" id="z2l-cX-ezV"/>
+                                            <action selector="HomeNavigation:" destination="vcc-1L-BYX" eventType="touchUpInside" id="5Ki-px-zr2"/>
+                                            <action selector="HomeNavigation:" destination="NXU-nK-ixh" eventType="touchUpInside" id="UcB-rd-0Ge"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nq-ij-Mcx">
+                                        <rect key="frame" x="85" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="ceremonyicon"/>
+                                        <connections>
+                                            <action selector="CeremonyNavigation:" destination="NXU-nK-ixh" eventType="touchUpInside" id="erC-9R-J29"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ax-7p-uGj">
+                                        <rect key="frame" x="155" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="celebrationicon"/>
+                                        <connections>
+                                            <action selector="CelebrationNavigation:" destination="vcc-1L-BYX" eventType="touchUpInside" id="bDf-ab-6b1"/>
+                                            <action selector="CelebrationNavigation:" destination="NXU-nK-ixh" eventType="touchUpInside" id="jmo-k9-PQI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slD-WS-1gK">
+                                        <rect key="frame" x="225" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="guestbookicon"/>
+                                        <connections>
+                                            <action selector="GuestBookNavigation:" destination="NXU-nK-ixh" eventType="touchUpInside" id="Bge-38-ms9"/>
+                                            <action selector="GuestNavigation:" destination="vcc-1L-BYX" eventType="touchUpInside" id="GJ9-Ba-9Lw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aB4-ZT-6B2">
+                                        <rect key="frame" x="295" y="13" width="65" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="aboutusicon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Zvf-KA-w4L"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="xEw-wQ-eVg" id="ynd-bJ-6bg"/>
+                        <outlet property="button2" destination="0nq-ij-Mcx" id="t21-8Z-jye"/>
+                        <outlet property="button3" destination="7ax-7p-uGj" id="0Qq-l1-USC"/>
+                        <outlet property="button4" destination="slD-WS-1gK" id="A9Y-ga-8FP"/>
+                        <outlet property="button5" destination="aB4-ZT-6B2" id="krO-kv-i3a"/>
+                        <outlet property="text1" destination="tyr-WL-3Pa" id="n80-Vy-eoz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teX-sr-WsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737" y="681"/>
+        </scene>
+        <!--Guest Book Sign View Controller-->
+        <scene sceneID="UxX-4j-6YK">
+            <objects>
+                <viewController id="zgA-WC-ZDf" customClass="GuestBookSignViewController" customModule="ChrisRachelWeddingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bn-6g-UEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ChrisRachelWeddingInvitation2" translatesAutoresizingMaskIntoConstraints="NO" id="umY-wn-g9l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOh-xL-6zd">
+                                <rect key="frame" x="68" y="20" width="239" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Guest Book">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.19987309644670048" green="0.19987309644670048" blue="0.19987309644670048" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="43" name="destain"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-I4-faU">
+                                <rect key="frame" x="46" y="219" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDa-un-9ve">
+                                <rect key="frame" x="46" y="172" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFD-Pr-0PM">
+                                <rect key="frame" x="46" y="121" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TerryScript" family="Terry Script" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-ok-ryn">
+                                <rect key="frame" x="105" y="219" width="240" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.46701091610000001" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="68g-44-kQR">
+                                <rect key="frame" x="105" y="164" width="240" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.46701091610000001" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9mM-hP-2GB">
+                                <rect key="frame" x="105" y="113" width="240" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.46701091610000001" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhB-ay-xtI">
+                                <rect key="frame" x="55" y="609" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="CancelAction:" destination="zgA-WC-ZDf" eventType="touchUpInside" id="4ry-Wy-bFc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afF-z3-srU">
+                                <rect key="frame" x="299" y="609" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="PostAction:" destination="zgA-WC-ZDf" eventType="touchUpInside" id="wok-QK-RLt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="kJ1-8K-HQ5"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailtv" destination="68g-44-kQR" id="Kvf-UR-LYi"/>
+                        <outlet property="messagetv" destination="ngt-ok-ryn" id="0va-yy-etu"/>
+                        <outlet property="nametv" destination="9mM-hP-2GB" id="1pR-Xe-HSO"/>
+                        <outlet property="text1" destination="KOh-xL-6zd" id="nNE-iH-pVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZcA-eX-qrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2408.8000000000002" y="17.541229385307346"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Chris" width="423" height="414"/>
+        <image name="ChrisRachelWeddingInvitation2" width="1500" height="2100"/>
+        <image name="RachelImage" width="438" height="459"/>
+        <image name="aboutusicon" width="552" height="432"/>
+        <image name="bitmap" width="974" height="588"/>
+        <image name="celebrationicon" width="636" height="867"/>
+        <image name="ceremonyicon" width="594" height="612"/>
+        <image name="guestbookicon" width="612" height="656"/>
+        <image name="homeicon" width="456" height="464"/>
+    </resources>
 </document>

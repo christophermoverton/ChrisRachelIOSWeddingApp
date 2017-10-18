@@ -15,6 +15,14 @@
 		7B64706C1F928D5700F4E52C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B64706A1F928D5700F4E52C /* LaunchScreen.storyboard */; };
 		7B6470771F928D5800F4E52C /* ChrisRachelWeddingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6470761F928D5800F4E52C /* ChrisRachelWeddingAppTests.swift */; };
 		7B6470821F928D5800F4E52C /* ChrisRachelWeddingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6470811F928D5800F4E52C /* ChrisRachelWeddingAppUITests.swift */; };
+		7B6470901F929F8600F4E52C /* destain.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B64708F1F929F7900F4E52C /* destain.ttf */; };
+		7B6470921F92AE2B00F4E52C /* ter1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B6470911F92AE1C00F4E52C /* ter1.ttf */; };
+		7B6470941F93CFB100F4E52C /* CelebrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6470931F93CFAF00F4E52C /* CelebrationViewController.swift */; };
+		7B6470961F93D79900F4E52C /* CeremonyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6470951F93D79900F4E52C /* CeremonyViewController.swift */; };
+		7B6470981F94477E00F4E52C /* GuestBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6470971F94477E00F4E52C /* GuestBookViewController.swift */; };
+		7B64709A1F945BDC00F4E52C /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6470991F945BDC00F4E52C /* AboutUsViewController.swift */; };
+		7B64709C1F95540D00F4E52C /* FadeScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64709B1F95540A00F4E52C /* FadeScrollView.swift */; };
+		7B64709E1F95BF1B00F4E52C /* GuestBookSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B64709D1F95BF1500F4E52C /* GuestBookSignViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		7B64707D1F928D5800F4E52C /* ChrisRachelWeddingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChrisRachelWeddingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6470811F928D5800F4E52C /* ChrisRachelWeddingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChrisRachelWeddingAppUITests.swift; sourceTree = "<group>"; };
 		7B6470831F928D5800F4E52C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B64708F1F929F7900F4E52C /* destain.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = destain.ttf; sourceTree = "<group>"; };
+		7B6470911F92AE1C00F4E52C /* ter1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ter1.ttf; sourceTree = "<group>"; };
+		7B6470931F93CFAF00F4E52C /* CelebrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrationViewController.swift; sourceTree = "<group>"; };
+		7B6470951F93D79900F4E52C /* CeremonyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeremonyViewController.swift; sourceTree = "<group>"; };
+		7B6470971F94477E00F4E52C /* GuestBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestBookViewController.swift; sourceTree = "<group>"; };
+		7B6470991F945BDC00F4E52C /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		7B64709B1F95540A00F4E52C /* FadeScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeScrollView.swift; sourceTree = "<group>"; };
+		7B64709D1F95BF1500F4E52C /* GuestBookSignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestBookSignViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +115,20 @@
 		7B64705D1F928D5600F4E52C /* ChrisRachelWeddingApp */ = {
 			isa = PBXGroup;
 			children = (
+				7B64708F1F929F7900F4E52C /* destain.ttf */,
+				7B6470911F92AE1C00F4E52C /* ter1.ttf */,
 				7B64705E1F928D5600F4E52C /* AppDelegate.swift */,
 				7B6470601F928D5600F4E52C /* ViewController.swift */,
 				7B6470621F928D5700F4E52C /* Main.storyboard */,
+				7B64709D1F95BF1500F4E52C /* GuestBookSignViewController.swift */,
+				7B6470991F945BDC00F4E52C /* AboutUsViewController.swift */,
+				7B6470971F94477E00F4E52C /* GuestBookViewController.swift */,
+				7B6470951F93D79900F4E52C /* CeremonyViewController.swift */,
+				7B6470931F93CFAF00F4E52C /* CelebrationViewController.swift */,
 				7B6470681F928D5700F4E52C /* Assets.xcassets */,
 				7B64706A1F928D5700F4E52C /* LaunchScreen.storyboard */,
 				7B64706D1F928D5700F4E52C /* Info.plist */,
+				7B64709B1F95540A00F4E52C /* FadeScrollView.swift */,
 				7B6470651F928D5700F4E52C /* ChrisRachelWeddingApp.xcdatamodeld */,
 			);
 			path = ChrisRachelWeddingApp;
@@ -235,9 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6470921F92AE2B00F4E52C /* ter1.ttf in Resources */,
 				7B64706C1F928D5700F4E52C /* LaunchScreen.storyboard in Resources */,
 				7B6470691F928D5700F4E52C /* Assets.xcassets in Resources */,
 				7B6470641F928D5700F4E52C /* Main.storyboard in Resources */,
+				7B6470901F929F8600F4E52C /* destain.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6470611F928D5600F4E52C /* ViewController.swift in Sources */,
+				7B64709C1F95540D00F4E52C /* FadeScrollView.swift in Sources */,
+				7B6470941F93CFB100F4E52C /* CelebrationViewController.swift in Sources */,
+				7B6470981F94477E00F4E52C /* GuestBookViewController.swift in Sources */,
+				7B64709E1F95BF1B00F4E52C /* GuestBookSignViewController.swift in Sources */,
 				7B64705F1F928D5600F4E52C /* AppDelegate.swift in Sources */,
+				7B64709A1F945BDC00F4E52C /* AboutUsViewController.swift in Sources */,
+				7B6470961F93D79900F4E52C /* CeremonyViewController.swift in Sources */,
 				7B6470671F928D5700F4E52C /* ChrisRachelWeddingApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
